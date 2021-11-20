@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    color: currentColor;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+html {
+    --font-height: 1.5;
+    /* userAgent 1.2 */
+    --base-font-size: 1.1rem;
+    --optimal-container: 1390px;
+    --optimal-readability: 750px;
+    --white: #f1f6f9;
+    --bg-light: #9ba4b4;
+    --bg: #394867;
+    --bg-dark: #14274e;
+    --shape-light: #222;
+    --shape: #222;
+    --shape-dark: #222;
+    --accent: #9ba4b4;
+    accent-color: var(--accent);
+    background-color: var(--white);
+    color: var(--bg-dark);
+}
+
+body {
+    font-size: var(--base-font-size);
+    font-weight: 400;
+    line-height: var(--font-height);
+    font-family: system-ui, BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    text-rendering: optimizeLegibility;
+    /* scrollbar-color: var(--error-200) Canvas; */
+}
+h1,
+h2 {
+    color: inherit;
+}
+main {
+    display: flex;
+    width: 100%;
+    width: min(calc(100vw - 2em), 1800px);
+    margin-right: auto;
+    margin-left: auto;
+    flex-direction: column;
+}
+
+article {
+    position: relative;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.badge {
+    position: absolute;
+    bottom: -2.3em;
+    left: 0em;
+    padding: 0.3em;
+    filter: brightness(2);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+header a {
+    text-underline-offset: 2px;
+}
+
+.fx-hue {
+    filter: hue-rotate(90deg);
+}
+
+.fx-gray {
+    filter: grayscale(0.7);
+}
+.fx-bright {
+    filter: brightness(1.4);
+}
+::-webkit-selection {
+    background-color: var(--accent);
+}
+
+::-moz-selection {
+    background-color: var(--accent);
+}
+
+::selection {
+    background-color: var(--accent);
+}
+
+.offscreen {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
