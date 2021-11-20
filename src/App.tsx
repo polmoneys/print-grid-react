@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react';
+import { Fragment } from 'react';
 import Demos from './Demos';
 // import logo from './logo.svg'
 import './App.css';
@@ -21,7 +21,7 @@ function App() {
                 <br aria-hidden="true" />
                 <header className="flex">
                     <h1> Print layouts made easy </h1>
-                    <a href="https://github.com/">Docs</a>
+                    <a href="https://github.com/polmoneys/print-grid-react">Docs</a>
                 </header>
                 <br aria-hidden="true" />
                 <br aria-hidden="true" />
