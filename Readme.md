@@ -6,7 +6,13 @@ Silly small, no strings attached, it works for 'everything' if you must, just do
 
 ## Get Started
 
-First treat this library as 'implementation detail' hidden behind your own design system api. 
+Install it as node_module. 
+
+```bash
+npm i print-grid-react
+```
+
+Consume it as 'implementation detail' hidden behind your own design system api. 
 
 ```typescript
 
@@ -32,6 +38,10 @@ const OwnVersion = (props: EnhancedProps) => {
 };
 
 ```
+
+You'd use your `OwnVersion` in your codebase. 
+
+## Props
 
 Then, provide a surface to lay out the items, props ask for `x` and `y` and accepts `gap` to aide in the spacing between items. 
 
